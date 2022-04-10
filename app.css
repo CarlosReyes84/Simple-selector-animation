@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+.container {
+    height: 100%;
+    display: flex;
+}
+.left-card {
+    background-image: url('https://images.pexels.com/photos/4491606/pexels-photo-4491606.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50%;
+    transition: width 1s ease;
+}
+.left-card:hover {
+    width: 85%;
+    transition: all 1s ease;
+    cursor: pointer;
+}
+.right-card {
+    background-image: url('https://images.pexels.com/photos/9071466/pexels-photo-9071466.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50%;
+    transition: width 1s ease;
+}
+.right-card:hover {
+    width: 85%;
+    transition: all 1s ease;
+    cursor: pointer;
+}
+.card {
+    display: grid;
+    place-content: center;
+    text-align: center;
+}
+.card h1 {
+    font-size: 3rem;
+    color: #fff;
+    text-shadow: 0 0 10px #000;
+}
+.card button {
+    padding: 20px;
+    width: 240px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    background-color: transparent;
+    border: 4px solid #fff;
+    color: #fff;
+}
+@media(max-width: 800px) {
+    .card h1 {
+        font-size: 2rem;
+    }
+    .card button {
+        font-size: 1rem;
+        padding: 13px;
+        width: 200px;
+    }
+}
